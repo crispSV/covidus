@@ -12,12 +12,13 @@
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
     <a href="#home" class="w3-bar-item w3-button">
-    <img src="{% static 'img/covid.png' %}" alt="My image" class="logo">
-    <b>C</b> ovidus</a>
+    <img src="{% static 'img/logo2.jpg' %}" alt="My image" class="logo">
+    <!-- <b>C</b> ovidus -->
+  </a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="#projects" class="w3-bar-item w3-button">Vulnerability</a>
-      <a href="#about" class="w3-bar-item w3-button">Public</a>
+      <a href="#about" class="w3-bar-item w3-button">Map</a>
       <a href="#contact" class="w3-bar-item w3-button">Info</a>
     </div>
   </div>
@@ -37,13 +38,13 @@
   <!-- landing Section -->
   <div class="w3-container w3-padding-32 landing-container" id="projects">
     <h3 class="w3-border-bottom w3-border-light-grey landing-1">Covidus</h3>
-    <p class="landing-3">A personal health assistant used by senior citizens and people taking care them, as well as a public health assistant that connects citizens with public health stakeholders such as general practitioners and public health policy makers.
+    <p class="landing-3">A personal health assistant used by citizens, connecting them with public health stakeholders such as general practitioners and public health policy makers.
     <h2 class="landing-2">Covidus Personal Health Assistant</h3>
     {% comment %} <h3 class="">placeholder placeholder placeholder info about Covidus more placeholder</h3> {% endcomment %}
 
     {% comment %} <button class="btn-1">Login</button {% endcomment %}
     <div class="input-container" >
-    <p class="landing-3"> Enter your useraname to login to Covidus</p>
+    <p class="landing-3"> Enter your credentials to login to Covidus</p>
       <form action="/enter" target="_blank" method="post">
       {% csrf_token %} 
         <input class="input-1" type="text" placeholder="username" required name="username">
@@ -51,6 +52,10 @@
         <button class="btn-1" type="submit">Enter</button
 
       </form>
+      <div class="pass_user_div">
+      <p  class="pass_user ma-auto">Username = covidus</p>
+      <p class="pass_user">Password = covidus</p>
+    </div>
     </div>
   </div>
   <!-- About Section -->

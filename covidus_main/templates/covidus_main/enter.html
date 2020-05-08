@@ -1,1 +1,265 @@
-Welcome {{user}} you can now fill in your data below
+
+{% extends 'covidus_main/base.html' %}
+{% load static %}
+{% block main %}
+<link rel="stylesheet" href="{% static 'css/enter.css'%}">
+
+
+<main class="w3-content w3-padding " style="max-width:1564px">
+    Welcome {{user}} you can now fill in your data below
+    <div class="container-fluid contain mt-5">
+      <div class="row">
+
+        <div class="col-sm-3 side-bar">
+          <img src="{% static 'img/profile.jpeg'%}" alt="" class="profile-img">
+          <p>George Papas</p>
+          <a class="side-button">Online</a>
+          <div>
+              <table class="table table-striped">
+                <!-- <thead>
+                  <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                  </tr>
+                </thead> -->
+                <tbody>
+                  <tr>
+                    <td>Full name</td>
+                    <td>George Papas</td>
+                  </tr>
+                
+                  <tr>
+                    <td>Username</td>
+                    <td>georgepapas</td>
+                  </tr>
+                  <tr>
+                    <td>Age</td>
+                    <td>67</td>
+                  </tr>
+                  <tr>
+                    <td>Country</td>
+                    <td>Greece</td>
+                  </tr>
+                  <tr>
+                    <td>Postal Code</td>
+                    <td>10672</td>
+                  </tr>
+                  <tr>
+                    <td>Sex</td>
+                    <td>Male</td>
+                  </tr>
+              
+                  <tr>
+                    <td>Smoking history</td>
+                    <td>Former smoker</td>
+                  </tr>
+                  <tr>
+                    <td>Chronic obstructive pulmonary disease</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Diabetes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Hypertension</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>Coronary heart disease</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Hepatitis B infection</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Cancer</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Chronic renal disease</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Immunodeficiency</td>
+                    <td>No</td>
+                  </tr>
+
+                </tbody>
+              </table>
+  
+          </div>
+        </div>
+        <div class="col-sm-offset-3 main">
+        <div class="nav-dash">
+            <a href="" class="page-header">
+                <h1 >Hello George</h1>
+                <p class="page-header_p">Your health looks good today, here is your risk assesment vulnerability chart</p>
+            </a>
+            <!-- <a href="/enter" class="page-header">
+                <h1 >Aggregate View</h1>
+            </a> -->
+        </div>
+
+
+          <div class="row placeholders">
+            <div class="col-xs-12 col-sm-10 placeholder">
+              <div class="vulnerability">
+                <h4>Vulnerability chart for over the last 14days</h4>
+                <img src="{% static 'img/vulnerability.png'%}" class="vulnerability-chart"><img>
+              </div>
+
+              <!-- {% comment %} <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"> {% endcomment %} -->
+            </div>
+          </div>
+
+          <h2 class="sub-header">Daily Assesment</h2>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                  <th>Header</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1,001</td>
+                  <td>Lorem</td>
+                  <td>ipsum</td>
+                  <td>dolor</td>
+                  <td>sit</td>
+                </tr>
+              
+                <tr>
+                  <td>1,003</td>
+                  <td>libero</td>
+                  <td>Sed</td>
+                  <td>cursus</td>
+                  <td>ante</td>
+                </tr>
+                <tr>
+                  <td>1,004</td>
+                  <td>dapibus</td>
+                  <td>diam</td>
+                  <td>Sed</td>
+                  <td>nisi</td>
+                </tr>
+                <tr>
+                  <td>1,005</td>
+                  <td>Nulla</td>
+                  <td>quis</td>
+                  <td>sem</td>
+                  <td>at</td>
+                </tr>
+                <tr>
+                  <td>1,006</td>
+                  <td>nibh</td>
+                  <td>elementum</td>
+                  <td>imperdiet</td>
+                  <td>Duis</td>
+                </tr>
+                <tr>
+                  <td>1,007</td>
+                  <td>sagittis</td>
+                  <td>ipsum</td>
+                  <td>Praesent</td>
+                  <td>mauris</td>
+                </tr>
+            
+                <tr>
+                  <td>1,010</td>
+                  <td>massa</td>
+                  <td>Vestibulum</td>
+                  <td>lacinia</td>
+                  <td>arcu</td>
+                </tr>
+                <tr>
+                  <td>1,011</td>
+                  <td>eget</td>
+                  <td>nulla</td>
+                  <td>Class</td>
+                  <td>aptent</td>
+                </tr>
+                <tr>
+                  <td>1,012</td>
+                  <td>taciti</td>
+                  <td>sociosqu</td>
+                  <td>ad</td>
+                  <td>litora</td>
+                </tr>
+                <tr>
+                  <td>1,013</td>
+                  <td>torquent</td>
+                  <td>per</td>
+                  <td>conubia</td>
+                  <td>nostra</td>
+                </tr>
+                <tr>
+                  <td>1,014</td>
+                  <td>per</td>
+                  <td>inceptos</td>
+                  <td>himenaeos</td>
+                  <td>Curabitur</td>
+                </tr>
+                <tr>
+                  <td>1,015</td>
+                  <td>sodales</td>
+                  <td>ligula</td>
+                  <td>in</td>
+                  <td>libero</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+
+   
+
+    <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'line',
+
+        // The data for our dataset
+        data: {
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            datasets: [{
+                label: 'My First dataset',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [0, 10, 5, 2, 20, 30, 45]
+            }]
+        },
+
+        // Configuration options go here
+        options: {}
+    });
+        
+    </script>
+
+</main>
+
+
+{% endblock %}
